@@ -2,6 +2,7 @@ import os
 import requests
 import matplotlib.pyplot as plt
 import re
+import base64
 
 API_KEY = os.getenv("WAKATIME_API_KEY")
 if not API_KEY:
@@ -9,7 +10,13 @@ if not API_KEY:
 
 URL = "https://wakatime.com/api/v1/users/current/stats/last_7_days"
 
-resp = requests.get(URL, auth=("api", API_KEY))
+creds = base64.b64encode(API_KEY.encode()).decode()
+headers = {
+    "Authorization": f"Basic {creds}",
+    "Accept": "application/json",
+}
+
+resp = requests.get(URL, headers=headers)
 data = resp.json()
 
 if "errors" in data:
