@@ -1,27 +1,38 @@
-name: Waka Readme
+name: Update WakaTime Stats
 
 on:
+  push:
+    branches:
+      - main
   schedule:
-    - cron: "0 */6 * * *"
-  workflow_dispatch:
+    - cron: "0 12 * * *"
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
 
-      - uses: anmol098/waka-readme-stats@master
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
+          python-version: "3.14"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests matplotlib
+
+      - name: Run WakaTime Script
+        env:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          SHOW_LANGUAGE: true
-          SHOW_OS: false
-          SHOW_PROJECTS: false
-          SHOW_EDITORS: false
-          SHOW_TIMEZONE: false
-          SHOW_COMMIT: false
-          SHOW_PROFILE_VIEWS: false
-          SHOW_TOTAL_CODE_TIME: false
-          SHOW_LINES_OF_CODE: false
-          SHOW_LANGUAGE_PER_REPO: false
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python update_readme.py
+
+      - name: Commit & Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update WakaTime language stats [skip ci]"
+          branch: main
+          file_pattern: "README.md,wakatime_languages.png"
