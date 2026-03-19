@@ -24,10 +24,10 @@
 [![Pandas](https://img.icons8.com/?size=35&id=xSkewUSqtErH&format=png&color=000000)]()   &nbsp;
 [![NumPy](https://img.icons8.com/?size=35&id=aR9CXyMagKIS&format=png&color=000000)]()   &nbsp;
 [![Matplotlib](https://img.icons8.com/?size=35&id=TkX1totjFmAD&format=png&color=000000)]()   &nbsp;
-[![Seaborn](https://www.educative.io/api/edpresso/shot/5096396179374080/image/5300591913336832)]()   &nbsp;
+[<img src="https://www.educative.io/api/edpresso/shot/5096396179374080/image/5300591913336832" width="35"/>](#) &nbsp;
 [![Power BI](https://img.icons8.com/?size=35&id=3sGOUDo9nJ4k&format=png&color=000000)]()   &nbsp;
-[![Excel](https://img.icons8.com/?size=100&id=117561&format=png&color=000000)]()   &nbsp;
-[![Scikit Learn](https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1280px-Scikit_learn_logo_small.svg.png)]()
+[![Excel](https://img.icons8.com/?size=35&id=117561&format=png&color=000000)]()   &nbsp;
+[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1280px-Scikit_learn_logo_small.svg.png" width="35"/>](#)
 
 ---
 
