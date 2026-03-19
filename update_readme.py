@@ -8,7 +8,7 @@ API_KEY = os.getenv("WAKATIME_API_KEY")
 if not API_KEY:
     raise ValueError("WAKATIME_API_KEY not found in environment variables!")
 
-URL = "https://wakatime.com/api/v1/users/current/stats/last_7_days"
+URL = "URL = "https://api.wakatime.com/api/v1/users/current/stats/last_7_days""
 
 creds = base64.b64encode(API_KEY.encode()).decode()
 headers = {
