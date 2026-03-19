@@ -7,7 +7,7 @@
 
 ---
 
-### 📫 Feel free to contact or follow me 
+### Feel free to contact or follow me 📫
 [![LinkedIn](https://img.icons8.com/?size=50&id=13930&format=png&color=000000)](https://www.linkedin.com/in/mustafayouniss/) &nbsp;
 [![YouTube](https://img.icons8.com/?size=50&id=19318&format=png&color=000000)](https://www.youtube.com/@coderixxx) &nbsp;
 [![Facebook](https://img.icons8.com/?size=50&id=118497&format=png&color=000000)](https://www.facebook.com/mstfy.ywns.97063) &nbsp;
@@ -16,12 +16,15 @@
 
 ---
 
-### 🛠 Languages & Tools
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)]()  
-[![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)]()  
-[![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)]()  
-[![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=NumPy&logoColor=white)]()  
-[![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=microsoftpowerbi&logoColor=black)]()  
+### Languages & Tools 🛠
+[![Python](https://img.icons8.com/?size=35&id=13441&format=png&color=000000)]()  
+[![C++](https://img.icons8.com/?size=35&id=40669&format=png&color=000000)]()  
+[![Java](https://img.icons8.com/?size=35&id=13679&format=png&color=000000)]()  
+[![SQL](https://img.icons8.com/?size=35&id=J6KcaRLsTgpZ&format=png&color=000000)]()  
+[![Pandas](https://img.icons8.com/?size=35&id=xSkewUSqtErH&format=png&color=000000)]()  
+[![NumPy](https://img.icons8.com/?size=35&id=aR9CXyMagKIS&format=png&color=000000)]()  
+[![Matplotlib](https://img.icons8.com/?size=35&id=TkX1totjFmAD&format=png&color=000000)]()  
+[![Power BI](https://img.icons8.com/?size=100&id=3sGOUDo9nJ4k&format=png&color=000000)]()  
 [![OOP](https://img.shields.io/badge/OOP-6CC24A?style=flat-square)]()  
 [![DSA](https://img.shields.io/badge/DSA-008080?style=flat-square)]()  
 
