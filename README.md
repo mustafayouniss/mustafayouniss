@@ -36,5 +36,3 @@
 <!--END_SECTION:waka-->
 
 ---
-
-![Data Science Illustration](https://images.unsplash.com/photo-1612831665052-507c32ef92f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNjY5NzN8MHwxfGFsbHwxfHxkYXRhJTIwc2NpZW5jZXx8MHx8fHwxNjg5ODUyMDY5&ixlib=rb-4.0.3&q=80&w=400)
