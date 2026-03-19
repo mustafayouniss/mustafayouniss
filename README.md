@@ -1,9 +1,9 @@
-# Welcome to my corner of GitHub 👋
-• I'm Mustafa Younis, passionate Data Scientist.
-• Student at the Faculty of Computers and Data Science Alexandria University.
-• Content creator on [Coderix YouTube Channel](https://www.youtube.com/@coderixxx).
-• Volunteer Leader at [Resala Charity Organization](https://resala.org/).
-• Always learning and collaborating with communities to make projects impactful.
+# Welcome to my GitHub✨🚀
+• I'm Mustafa Younis, passionate Data Scientist💻📊 <br>
+• Student at the Faculty of Computers and Data Science Alexandria University🎓<br>
+• Content creator on [Coderix YouTube Channel](https://www.youtube.com/@coderixxx)🎥 <br>
+• Volunteer Leader at [Resala Charity Organization](https://resala.org/) <br>
+• Always learning and collaborating with communities to make projects impactful🌟<br>
 
 ---
 
