@@ -17,15 +17,15 @@
 ---
 
 ### Languages & Tools 🛠
-[![Python](https://img.icons8.com/?size=35&id=13441&format=png&color=000000)]()  
-[![C++](https://img.icons8.com/?size=35&id=40669&format=png&color=000000)]()  
-[![Java](https://img.icons8.com/?size=35&id=13679&format=png&color=000000)]()  
-[![SQL](https://img.icons8.com/?size=35&id=J6KcaRLsTgpZ&format=png&color=000000)]()  
-[![Pandas](https://img.icons8.com/?size=35&id=xSkewUSqtErH&format=png&color=000000)]()  
-[![NumPy](https://img.icons8.com/?size=35&id=aR9CXyMagKIS&format=png&color=000000)]()  
-[![Matplotlib](https://img.icons8.com/?size=35&id=TkX1totjFmAD&format=png&color=000000)]()  
-[![Power BI](https://img.icons8.com/?size=100&id=3sGOUDo9nJ4k&format=png&color=000000)]()  
-[![OOP](https://img.shields.io/badge/OOP-6CC24A?style=flat-square)]()  
+[![Python](https://img.icons8.com/?size=35&id=13441&format=png&color=000000)]()   &nbsp;
+[![C++](https://img.icons8.com/?size=35&id=40669&format=png&color=000000)]()   &nbsp;
+[![Java](https://img.icons8.com/?size=35&id=13679&format=png&color=000000)]()   &nbsp;
+[![SQL](https://img.icons8.com/?size=35&id=J6KcaRLsTgpZ&format=png&color=000000)]()   &nbsp;
+[![Pandas](https://img.icons8.com/?size=35&id=xSkewUSqtErH&format=png&color=000000)]()   &nbsp;
+[![NumPy](https://img.icons8.com/?size=35&id=aR9CXyMagKIS&format=png&color=000000)]()   &nbsp;
+[![Matplotlib](https://img.icons8.com/?size=35&id=TkX1totjFmAD&format=png&color=000000)]()   &nbsp;
+[![Power BI](https://img.icons8.com/?size=35&id=3sGOUDo9nJ4k&format=png&color=000000)]()   &nbsp;
+[![OOP](https://img.shields.io/badge/OOP-6CC24A?style=flat-square)]()   &nbsp;
 [![DSA](https://img.shields.io/badge/DSA-008080?style=flat-square)]()  
 
 ---
