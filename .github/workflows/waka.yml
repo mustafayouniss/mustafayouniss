@@ -1,6 +1,7 @@
 name: Update WakaTime Stats
 
 on:
+  workflow_dispatch: 
   push:
     branches:
       - main
