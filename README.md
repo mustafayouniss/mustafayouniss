@@ -32,45 +32,6 @@
 ---
 
 ### 📊 This week I spent my time on
-<!--START_SECTION:waka-->
-**🐱 My GitHub Data** 
-
-> 📦 ? Used in GitHub's Storage 
- > 
-> 🏆 27 Contributions in the Year 2026
- > 
-> 🚫 Not Opted to Hire
- > 
-> 📜 1 Public Repository 
- > 
-> 🔑 0 Private Repository 
- > 
-📅 **I'm Most Productive on Thursday** 
-
-```text
-Monday                   0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-Tuesday                  0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-Wednesday                0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-Thursday                 26 commits          █████████████████████████   100.00 % 
-Friday                   0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-Saturday                 0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-Sunday                   0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-💬 Programming Languages: 
-No Activity Tracked This Week
-```
-
-**Timeline**
-
-![Lines of Code chart](https://raw.githubusercontent.com/mustafayouniss/mustafayouniss/main/assets/bar_graph.png)
-
-
- Last Updated on 19/03/2026 20:48:14 UTC
-<!--END_SECTION:waka-->
+![WakaTime Stats](wakatime_languages.png)
 
 ---
