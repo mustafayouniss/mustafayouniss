@@ -1,17 +1,18 @@
-# hey there 👋
-
-Hi, I'm **Moostafa Younis**, a passionate Data Scientist and content creator on [Coderix YouTube Channel](https://www.youtube.com/@coderixxx). I enjoy exploring data, building analytical solutions, and sharing my knowledge in Python, SQL, and Data Science tools.
-
-I’m also a volunteer and organizer, always learning and collaborating with communities to make projects impactful.
+#Welcome to my corner of GitHub 👋
+• I'm Mustafa Younis, passionate Data Scientist.
+• Student at the Faculty of Computers and Data Science Alexandria University.
+• Content creator on [Coderix YouTube Channel](https://www.youtube.com/@coderixxx).
+• Volunteer Leader at [Resala Charity Organization](https://resala.org/).
+• Always learning and collaborating with communities to make projects impactful.
 
 ---
 
-### 📫 Connect with me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)  
-[![Facebook](https://img.shields.io/badge/Facebook-blue?style=flat-square&logo=facebook&logoColor=white)](https://facebook.com/yourprofile)  
-[![Codeforces](https://img.shields.io/badge/Codeforces-333?style=flat-square&logo=codeforces&logoColor=white)](https://codeforces.com/profile/yourhandle)  
-[![LeetCode](https://img.shields.io/badge/LeetCode-orange?style=flat-square&logo=leetcode&logoColor=white)](https://leetcode.com/yourhandle)  
-[![YouTube](https://img.shields.io/badge/YouTube-red?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@coderixxx)  
+### 📫 Feel free to contact or follow me 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile) &nbsp;
+[![Facebook](https://img.icons8.com/?size=100&id=118497&format=png&color=000000)](https://www.facebook.com/mstfy.ywns.97063) &nbsp;
+[![Codeforces](https://img.shields.io/badge/Codeforces-333?style=flat-square&logo=codeforces&logoColor=white)](https://codeforces.com/profile/yourhandle) &nbsp;
+[![LeetCode](https://img.shields.io/badge/LeetCode-orange?style=flat-square&logo=leetcode&logoColor=white)](https://leetcode.com/yourhandle) &nbsp;
+[![YouTube](https://img.shields.io/badge/YouTube-red?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@coderixxx)
 
 ---
 
