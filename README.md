@@ -33,10 +33,6 @@
 
 ### 📊 This week I spent my time on
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-0%20secs-blue?style=flat)
-
-![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue?style=flat)
-
 **🐱 My GitHub Data** 
 
 > 📦 ? Used in GitHub's Storage 
@@ -49,21 +45,13 @@
  > 
 > 🔑 0 Private Repository 
  > 
-**I'm a Night 🦉** 
-
-```text
-🌞 Morning                0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-🌆 Daytime                2 commits           ██░░░░░░░░░░░░░░░░░░░░░░░   08.00 % 
-🌃 Evening                23 commits          ███████████████████████░░   92.00 % 
-🌙 Night                  0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-```
 📅 **I'm Most Productive on Thursday** 
 
 ```text
 Monday                   0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 Tuesday                  0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 Wednesday                0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-Thursday                 25 commits          █████████████████████████   100.00 % 
+Thursday                 26 commits          █████████████████████████   100.00 % 
 Friday                   0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 Saturday                 0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 Sunday                   0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
@@ -73,35 +61,16 @@ Sunday                   0 commits           ░░░░░░░░░░░�
 📊 **This Week I Spent My Time On** 
 
 ```text
-🕑︎ Time Zone: Africa/Cairo
-
 💬 Programming Languages: 
 No Activity Tracked This Week
-
-🔥 Editors: 
-No Activity Tracked This Week
-
-🐱‍💻 Projects: 
-No Activity Tracked This Week
-
-💻 Operating System: 
-No Activity Tracked This Week
 ```
-
-**I Mostly Code in Assembly** 
-
-```text
-Assembly                 1 repo              █████████████████████████   100.00 % 
-```
-
-
 
 **Timeline**
 
 ![Lines of Code chart](https://raw.githubusercontent.com/mustafayouniss/mustafayouniss/main/assets/bar_graph.png)
 
 
- Last Updated on 19/03/2026 20:43:15 UTC
+ Last Updated on 19/03/2026 20:48:14 UTC
 <!--END_SECTION:waka-->
 
 ---
