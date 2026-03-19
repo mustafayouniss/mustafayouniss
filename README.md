@@ -32,11 +32,8 @@
 ---
 
 ### 📊 This week I spent my time on
-<!-- Example progress chart using shields -->
-[![Python](https://img.shields.io/badge/Python-15hrs-4BC51D?style=flat-square)]()  
-[![SQL](https://img.shields.io/badge/SQL-10hrs-007ACC?style=flat-square)]()  
-[![Projects](https://img.shields.io/badge/Projects-5hrs-F7DF1E?style=flat-square)]()  
-[![Learning](https://img.shields.io/badge/Learning-8hrs-FF6F61?style=flat-square)]()  
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 
 ---
 
