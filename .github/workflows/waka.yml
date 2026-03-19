@@ -36,3 +36,4 @@ jobs:
           commit_message: "Update WakaTime language stats [skip ci]"
           branch: main
           file_pattern: "README.md,wakatime_languages.png"
+          github_token: ${{ secrets.GH_TOKEN }}
