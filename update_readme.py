@@ -10,10 +10,9 @@ if not API_KEY:
 
 URL = "URL = "https://api.wakatime.com/api/v1/users/current/stats/last_7_days""
 
-creds = base64.b64encode(API_KEY.encode()).decode()
+creds = base64.b64encode(f"{API_KEY}:".encode()).decode()
 headers = {
     "Authorization": f"Basic {creds}",
-    "Accept": "application/json",
 }
 
 resp = requests.get(URL, headers=headers)
