@@ -8,11 +8,11 @@
 ---
 
 ### Feel free to contact or follow me 📫
-[![LinkedIn](https://img.icons8.com/?size=50&id=13930&format=png&color=000000)](https://www.linkedin.com/in/mustafayouniss/) &nbsp;
-[![YouTube](https://img.icons8.com/?size=50&id=19318&format=png&color=000000)](https://www.youtube.com/@coderixxx) &nbsp;
-[![Facebook](https://img.icons8.com/?size=50&id=118497&format=png&color=000000)](https://www.facebook.com/mstfy.ywns.97063) &nbsp;
-[![LeetCode](https://img.icons8.com/?size=50&id=9L16NypUzu38&format=png&color=000000)](https://leetcode.com/u/Mustafa_Younis/) &nbsp;
-[![Codeforces](https://img.icons8.com/?size=50&id=YSy0lU4Y0X4z&format=png&color=000000)](https://codeforces.com/profile/Mustafa_Younis)
+[![LinkedIn](https://img.icons8.com/?size=45&id=13930&format=png&color=000000)](https://www.linkedin.com/in/mustafayouniss/) &nbsp;
+[![YouTube](https://img.icons8.com/?size=45&id=19318&format=png&color=000000)](https://www.youtube.com/@coderixxx) &nbsp;
+[![Facebook](https://img.icons8.com/?size=45&id=118497&format=png&color=000000)](https://www.facebook.com/mstfy.ywns.97063) &nbsp;
+[![LeetCode](https://img.icons8.com/?size=45&id=9L16NypUzu38&format=png&color=000000)](https://leetcode.com/u/Mustafa_Younis/) &nbsp;
+[![Codeforces](https://img.icons8.com/?size=45&id=YSy0lU4Y0X4z&format=png&color=000000)](https://codeforces.com/profile/Mustafa_Younis)
 
 ---
 
