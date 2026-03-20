@@ -2,7 +2,6 @@ import os
 import requests
 import re
 import base64
-import math
 
 # -----------------------------
 # 1️⃣ إعداد WakaTime API
@@ -38,22 +37,21 @@ for day in data['data']:
 if not total_time:
     raise ValueError("No programming language data found in WakaTime response!")
 
-max_seconds = max(total_time.values())
-
 # -----------------------------
-# 3️⃣ بناء النص مع البارات المنطقية
+# 3️⃣ بناء النص مع البارات الواقعية
 # -----------------------------
 lines = []
 bar_max_length = 20
-min_bar_length = 2  # طول الحد الأدنى للبار عشان يظهر
+bar_unit = 0.5 * 3600  # كل نصف ساعة = وحدة بار
 
 for lang, secs in total_time.items():
     hours = int(secs // 3600)
     minutes = int((secs % 3600) // 60)
 
-    # استخدام اللوغاريتم لتقليل الفروقات الكبيرة
-    bar_length = int((math.log(secs + 1) / math.log(max_seconds + 1)) * bar_max_length)
-    bar_length = max(bar_length, min_bar_length)
+    # حساب طول البار حسب الوقت الفعلي
+    bar_length = int(secs / bar_unit)
+    bar_length = min(bar_length, bar_max_length)
+    bar_length = max(bar_length, 1)  # طول أدنى للبار
 
     bar = '█' * bar_length + ' ' * (bar_max_length - bar_length)
     lines.append(f"{lang.ljust(12)} {bar} {hours}h {minutes}m")
@@ -97,4 +95,4 @@ else:
 with open(readme_path, "w", encoding="utf-8") as f:
     f.write(readme)
 
-print("README updated with WakaTime stats (hours + mins)")
+print("README updated with WakaTime stats (hours + mins, realistic bars)")
