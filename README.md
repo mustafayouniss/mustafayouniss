@@ -31,9 +31,9 @@
 
 ---
 <!-- WakaTime stats will be updated here automatically -->
-<table>
+<table align="center" width="720">
 <tr>
-<th>This week I spent my time on 📊</th>
+<th style="font-size:18px;"><strong>This week I spent my time on 📊</strong></th>
 </tr>
 <tr>
 <td>
