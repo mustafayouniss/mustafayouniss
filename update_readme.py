@@ -48,18 +48,25 @@ with open(readme_path, "r", encoding="utf-8") as f:
 
 pattern = r"(<!-- WakaTime stats will be updated here automatically -->[\s\S]*?</table>)"
 replacement = f"""<!-- WakaTime stats will be updated here automatically -->
-<table align="center" width="800">
+
+<table align="center" width="100%">
 <tr>
-<th style="font-size:18px;"><strong>This week I spent my time on 📊</strong></th>
+<th align="center" style="font-size:22px; padding:10px;">
+<strong>This week I spent my time on 📊</strong>
+</th>
 </tr>
+
 <tr>
 <td>
-<pre>
+
+<pre style="font-size:16px; line-height:1.6;">
 {waka_text}
 </pre>
+
 </td>
 </tr>
-</table>"""
+</table>
+"""
 
 if re.search(pattern, readme):
     readme = re.sub(pattern, replacement, readme)
