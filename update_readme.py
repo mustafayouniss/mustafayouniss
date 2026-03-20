@@ -49,21 +49,20 @@ for lang in languages:
 
 waka_text = "\n".join(lines)
 
-# 7. تحديث README
+# 7. تحديث README داخل الـ placeholder
 readme_path = "README.md"
-waka_section = f"\n### ⌨️ WakaTime Language Stats (Last 7 Days)\n\n```\n{waka_text}\n```\n"
+placeholder_pattern = r"(<!-- WakaTime stats will be updated here automatically -->)"
 
 with open(readme_path, "r", encoding="utf-8") as f:
     readme = f.read()
 
-if "### ⌨️ WakaTime Language Stats" in readme:
-    readme = re.sub(
-        waka_section,
-        readme,
-        flags=re.DOTALL
-    )
-else:
-    readme += waka_section
+# استبدال المحتوى جوه الـ placeholder بالبيانات الجديدة
+readme = re.sub(
+    r"(<!-- WakaTime stats will be updated here automatically -->\n)(.*?)(\n)?",
+    f"\\1```\n{waka_text}\n```\n",
+    readme,
+    flags=re.DOTALL
+)
 
 with open(readme_path, "w", encoding="utf-8") as f:
     f.write(readme)
