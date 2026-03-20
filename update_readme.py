@@ -42,26 +42,27 @@ if not total_time:
 bar_max_length = 40  # أكبر طول بار
 bar_unit = 0.5 * 3600  # كل نصف ساعة = وحدة بار
 
-# نصوص الصفوف لكل لغة
 rows = []
 for lang, secs in total_time.items():
     hours = int(secs // 3600)
     minutes = int((secs % 3600) // 60)
 
+    # طول البار حسب الوقت الفعلي
     bar_length = int(secs / bar_unit)
     bar_length = min(bar_length, bar_max_length)
     bar_length = max(bar_length, 1)
 
     bar = '█' * bar_length + ' ' * (bar_max_length - bar_length)
+
+    # كل صف لغة
     rows.append(f"""
     <tr>
-        <td style="padding:5px; font-weight:bold;">{lang}</td>
-        <td style="padding:5px; font-family:monospace;">{bar}</td>
-        <td style="padding:5px; text-align:right;">{hours}h {minutes}m</td>
+        <td style="padding:5px; font-weight:bold; text-align:left;">{lang}</td>
+        <td style="padding:5px; font-family:monospace; text-align:center;">{bar}</td>
+        <td style="padding:5px; text-align:center;">{hours}h {minutes}m</td>
     </tr>
     """)
 
-# دمج الصفوف
 rows_html = "\n".join(rows)
 
 # -----------------------------
@@ -95,4 +96,4 @@ else:
 with open(readme_path, "w", encoding="utf-8") as f:
     f.write(readme)
 
-print("README updated with WakaTime stats in wider multi-row table ✅")
+print("README updated with WakaTime stats ✅ (multi-row, centered bars)")
