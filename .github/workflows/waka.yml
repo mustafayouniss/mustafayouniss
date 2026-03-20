@@ -1,7 +1,7 @@
 name: Update WakaTime Stats
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -14,10 +14,12 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.14"
 
@@ -32,8 +34,9 @@ jobs:
         run: python update_readme.py
 
       - name: Commit & Push Changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update WakaTime language stats [skip ci]"
           branch: main
           file_pattern: "README.md wakatime_languages.png"
+          push_options: "--force"
