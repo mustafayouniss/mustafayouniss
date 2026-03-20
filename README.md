@@ -43,13 +43,14 @@
 <td>
 
 <pre style="font-size:16px; line-height:1.6;">
-Python       ████████████████████ 1h 32m
-C++          █████████████        0h 5m
+Python       ███                  1h 32m
+C++          █                    0h 5m
 </pre>
 
 </td>
 </tr>
 </table>
+
 
 
 
