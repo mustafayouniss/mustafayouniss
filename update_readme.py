@@ -1,6 +1,7 @@
 import os
 import requests
 import base64
+import re
 
 # -----------------------------
 # 1️⃣ إعداد WakaTime API
@@ -37,9 +38,9 @@ if not total_time:
     raise ValueError("No programming language data found in WakaTime response!")
 
 # -----------------------------
-# 3️⃣ بناء البارات الواقعية لكل لغة
+# 3️⃣ بناء الجدول (صف لكل لغة)
 # -----------------------------
-bar_max_length = 40  # أكبر طول بار
+bar_max_length = 40  # أقصى طول للبار
 bar_unit = 0.5 * 3600  # كل نصف ساعة = وحدة بار
 
 rows = []
@@ -47,14 +48,12 @@ for lang, secs in total_time.items():
     hours = int(secs // 3600)
     minutes = int((secs % 3600) // 60)
 
-    # طول البار حسب الوقت الفعلي
     bar_length = int(secs / bar_unit)
     bar_length = min(bar_length, bar_max_length)
-    bar_length = max(bar_length, 1)
+    bar_length = max(bar_length, 1)  # ضمان طول أدنى للبار
 
     bar = '█' * bar_length + ' ' * (bar_max_length - bar_length)
 
-    # كل صف لغة
     rows.append(f"""
     <tr>
         <td style="padding:5px; font-weight:bold; text-align:left;">{lang}</td>
@@ -85,7 +84,6 @@ readme_path = "README.md"
 with open(readme_path, "r", encoding="utf-8") as f:
     readme = f.read()
 
-import re
 pattern = r"(<!-- WakaTime stats will be updated here automatically -->[\s\S]*?</table>)"
 
 if re.search(pattern, readme):
@@ -96,4 +94,4 @@ else:
 with open(readme_path, "w", encoding="utf-8") as f:
     f.write(readme)
 
-print("README updated with WakaTime stats ✅ (multi-row, centered bars)")
+print("README updated with WakaTime stats ✅ (multi-row table)")
