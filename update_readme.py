@@ -51,7 +51,7 @@ readme_path = "README.md"
 with open(readme_path, "r", encoding="utf-8") as f:
     readme = f.read()
 
-pattern = r"(<!-- WakaTime stats will be updated here automatically -->\n[\s\S]*?```)"
+pattern = r"(<!-- WakaTime stats will be updated here automatically -->\n```[\s\S]*?```)"
 replacement = f"<!-- WakaTime stats will be updated here automatically -->\n```\n{waka_text}\n```"
 
 if re.search(pattern, readme):
