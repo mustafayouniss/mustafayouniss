@@ -30,16 +30,25 @@
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1280px-Scikit_learn_logo_small.svg.png" width="55"/>](#)
 
 ---
-<!-- WakaTime stats will be updated here automatically -->
----
 
-<table align="center">
-  <tr>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api?username=mustafayouniss&show_icons=true&theme=github_dark&hide_border=true&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9" width="550"/>
-    </td>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mustafayouniss&layout=compact&theme=github_dark&hide_border=true&title_color=58a6ff&text_color=c9d1d9" width="400"/>
-    </td>
-  </tr>
+<!-- WakaTime stats will be updated here automatically -->
+<table align="center" width="100%" style="border-collapse: collapse; font-size:16px;">
+<tr>
+    <th style="text-align:left; padding:10px; font-size:22px;" colspan="3">📊 This week I spent my time on</th>
+</tr>
+
+    <tr>
+        <td style="padding:5px; font-weight:bold; text-align:left;">Python</td>
+        <td style="padding:5px; font-family:monospace; text-align:center;">███                                     </td>
+        <td style="padding:5px; text-align:center;">1h 32m</td>
+    </tr>
+    
+
+    <tr>
+        <td style="padding:5px; font-weight:bold; text-align:left;">C++</td>
+        <td style="padding:5px; font-family:monospace; text-align:center;">█                                       </td>
+        <td style="padding:5px; text-align:center;">0h 5m</td>
+    </tr>
+    
 </table>
+
