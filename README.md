@@ -38,4 +38,4 @@ C++          █                    0h 5m
 ```
 ---
 
-[![Mustafa's GitHub Stats](https://github-readme-stats.vercel.app/api?username=mustafayouniss&count_private=true&show_icons=true&title_color=0a66c2&icon_color=0a66c2&text_color=1f2937&bg_color=00000000)](https://github.com/mustafayouniss)
+[![Mustafa's GitHub Stats](https://github-readme-stats.vercel.app/api?username=mustafayouniss&show_icons=true&theme=github_dark&hide_border=true&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9)](https://github.com/mustafayouniss)
