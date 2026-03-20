@@ -34,22 +34,28 @@
 
 <table align="center" width="100%">
 <tr>
-<th align="center" style="font-size:22px; padding:10px;">
+<th colspan="3" align="center" style="font-size:22px; padding:12px;">
 <strong>This week I spent my time on 📊</strong>
 </th>
 </tr>
 
+
 <tr>
-<td>
-
-<pre style="font-size:16px; line-height:1.6;">
-Python       ████████████████████ 1h 32m
-C++          █                    0h 5m
-</pre>
-
-</td>
+<td width="20%" style="font-size:17px;"><strong>Python</strong></td>
+<td width="60%" style="font-family:monospace; font-size:16px;">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</td>
+<td width="20%" align="right" style="font-size:16px;">1h 32m</td>
 </tr>
+
+
+<tr>
+<td width="20%" style="font-size:17px;"><strong>C++</strong></td>
+<td width="60%" style="font-family:monospace; font-size:16px;">▓░░░░░░░░░░░░░░░░░░░░░░░░</td>
+<td width="20%" align="right" style="font-size:16px;">0h 5m</td>
+</tr>
+
+
 </table>
+
 
 
 ---
