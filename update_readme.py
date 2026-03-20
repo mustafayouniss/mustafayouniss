@@ -38,10 +38,11 @@ max_seconds = max(total_time.values())
 
 lines = []
 for lang, secs in total_time.items():
-    minutes = int(secs // 60)
+    hours = int(secs // 3600)
+    minutes = int((secs % 3600) // 60)
     bar_length = int((secs / max_seconds) * 20)
     bar = '█' * bar_length + ' ' * (20 - bar_length)
-    lines.append(f"{lang.ljust(12)} {bar} {minutes} mins")
+    lines.append(f"{lang.ljust(12)} {bar} {hours}h {minutes}m")
 
 waka_text = "\n".join(lines)
 
@@ -62,4 +63,4 @@ else:
 with open(readme_path, "w", encoding="utf-8") as f:
     f.write(readme)
 
-print("✅ README updated with WakaTime stats")
+print("✅ README updated with WakaTime stats (hours + mins)")
