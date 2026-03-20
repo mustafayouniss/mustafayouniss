@@ -13,7 +13,6 @@ headers = {"Authorization": f"Basic {creds}", "Accept": "application/json"}
 
 resp = requests.get(URL, headers=headers)
 data = resp.json()
-
 if "errors" in data:
     raise ValueError(f"WakaTime API Error: {data['errors']}")
 
@@ -49,21 +48,18 @@ for day in data['data']:
 if not total_time:
     raise ValueError("No programming language data found in WakaTime response!")
 
-# ترتيب اللغات حسب الوقت
 sorted_langs = sorted(total_time.items(), key=lambda x: x[1], reverse=True)
 
-# إعداد الـ rows
+MAX_BAR_LENGTH = 20
 lines = []
-MAX_BAR_LENGTH = 20  # طول bar كحد أقصى
 
 for lang, secs in sorted_langs:
     hours = int(secs // 3600)
     minutes = int((secs % 3600) // 60)
 
-    # حساب نسبة الإنجاز بالنسبة للـ target
     target_hours = targets.get(lang, 10)
     target_secs = target_hours * 3600
-    progress_ratio = min(secs / target_secs, 1.0)  # لا تزيد عن 100%
+    progress_ratio = min(secs / target_secs, 1.0)
 
     bar_length = int(progress_ratio * MAX_BAR_LENGTH)
     bar = '█' * bar_length + ' ' * (MAX_BAR_LENGTH - bar_length)
@@ -90,7 +86,7 @@ replacement = f"""<!-- WakaTime stats will be updated here automatically -->
 
 <tr>
 <td>
-<pre style="font-size:15px; line-height:1.6;">
+<pre style="font-size:15px; line-height:1.6; font-family: 'Courier New', monospace;">
 {waka_text}
 </pre>
 </td>
