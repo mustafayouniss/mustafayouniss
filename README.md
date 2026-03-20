@@ -41,13 +41,21 @@
 
 <tr>
 <td>
-<pre style="font-size:15px; line-height:1.6; font-family: 'Courier New', monospace;">
-Python       [█                   ] 1h 32m / 20h
-C++          [                    ] 0h 5m / 10h
+<pre style="font-size:14px; line-height:1.6; font-family: 'Courier New', monospace;">
+Python      
+┌────────────────────┐
+│█░░░░░░░░░░░░░░░░░░░│
+└────────────────────┘ 1h 32m / 20h
+
+C++         
+┌────────────────────┐
+│░░░░░░░░░░░░░░░░░░░░│
+└────────────────────┘ 0h 5m / 20h
 </pre>
 </td>
 </tr>
 </table>
+
 
 
 
