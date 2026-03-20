@@ -32,29 +32,25 @@
 ---
 <!-- WakaTime stats will be updated here automatically -->
 
-<table align="center" width="65%">
+<table align="center" width="100%">
 <tr>
-<th align="center" style="font-size:20px; padding:8px;">
+<th align="center" style="font-size:22px; padding:10px;">
 <strong>This week I spent my time on 📊</strong>
 </th>
 </tr>
 
 <tr>
 <td>
-<pre style="font-size:14px; line-height:1.6; font-family: 'Courier New', monospace;">
-Python      
-┌────────────────────┐
-│█░░░░░░░░░░░░░░░░░░░│
-└────────────────────┘ 1h 32m / 20h
 
-C++         
-┌────────────────────┐
-│░░░░░░░░░░░░░░░░░░░░│
-└────────────────────┘ 0h 5m / 20h
+<pre style="font-size:16px; line-height:1.6;">
+Python       ████████████████████ 1h 32m
+C++          █                    0h 5m
 </pre>
+
 </td>
 </tr>
 </table>
+
 
 
 
