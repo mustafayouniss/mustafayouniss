@@ -32,7 +32,7 @@
 ---
 <!-- WakaTime stats will be updated here automatically -->
 
-<table align="center" width="60%">
+<table align="center" width="65%">
 <tr>
 <th align="center" style="font-size:20px; padding:8px;">
 <strong>This week I spent my time on 📊</strong>
@@ -41,15 +41,14 @@
 
 <tr>
 <td>
-
 <pre style="font-size:15px; line-height:1.6;">
-Python       ████████████████████ 1h 32m / 20h
-C++          █                    0h 5m / 10h
+Python       █                    1h 32m / 20h
+C++                               0h 5m / 10h
 </pre>
-
 </td>
 </tr>
 </table>
+
 
 
 
