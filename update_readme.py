@@ -61,8 +61,21 @@ for lang, secs in sorted_langs:
     target_secs = target_hours * 3600
     progress_ratio = min(secs / target_secs, 1.0)
 
-    bar_length = int(progress_ratio * MAX_BAR_LENGTH)
-    bar = '█' * bar_length + ' ' * (MAX_BAR_LENGTH - bar_length)
+    bar_filled = int(progress_ratio * MAX_BAR_LENGTH)
+    bar_empty = MAX_BAR_LENGTH - bar_filled
+
+    # شكل البار مع حدود []
+    bar = "[" + "█" * bar_filled + " " * bar_empty + "]"
+
+    # ألوان تقريبية باستخدام emojis (اختياري) لو حابب
+    # لو مش حابب الألوان ابقي خلي bar طبيعي بدون emojis
+    # مثلا:
+    # if progress_ratio >= 0.8:
+    #     bar = "[" + "🟩"*bar_filled + " "*(bar_empty) + "]"
+    # elif progress_ratio >= 0.5:
+    #     bar = "[" + "🟨"*bar_filled + " "*(bar_empty) + "]"
+    # else:
+    #     bar = "[" + "🟥"*bar_filled + " "*(bar_empty) + "]"
 
     lines.append(f"{lang.ljust(12)} {bar} {hours}h {minutes}m / {target_hours}h")
 
@@ -102,4 +115,4 @@ else:
 with open(readme_path, "w", encoding="utf-8") as f:
     f.write(readme)
 
-print("✅ README updated with WakaTime stats")
+print("✅ README updated with WakaTime stats (Advanced bars with targets)")
