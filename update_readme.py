@@ -1,6 +1,5 @@
 import os
 import requests
-import matplotlib.pyplot as plt
 import re
 import base64
 
@@ -13,6 +12,7 @@ URL = "https://api.wakatime.com/api/v1/users/current/stats/last_7_days"
 creds = base64.b64encode(f"{API_KEY}:".encode()).decode()
 headers = {
     "Authorization": f"Basic {creds}",
+    "Accept": "application/json",
 }
 
 resp = requests.get(URL, headers=headers)
@@ -25,31 +25,30 @@ languages = data['data'].get('languages', [])
 if not languages:
     raise ValueError("No language data found in WakaTime response!")
 
+max_seconds = max(lang['total_seconds'] for lang in languages)
 
-lang_names = [lang['name'] for lang in languages]
-lang_hours = [round(lang['total_seconds'] / 3600, 2) for lang in languages]
+lines = []
+for lang in languages:
+    name = lang['name']
+    secs = lang['total_seconds']
+    hours = int(secs // 3600)
+    minutes = int((secs % 3600) // 60)
+    
+    bar_length = int((secs / max_seconds) * 20)
+    bar = '█' * bar_length + ' ' * (20 - bar_length)
+    lines.append(f"{name.ljust(12)} {bar} {hours}h {minutes}m")
 
-plt.figure(figsize=(10, 6))
-plt.bar(lang_names, lang_hours, color="skyblue")
-plt.title("⏱ Hours coded per language (Last 7 Days)")
-plt.xlabel("Language")
-plt.ylabel("Hours")
-plt.xticks(rotation=45, ha="right")
-plt.tight_layout()
-
-image_path = "wakatime_languages.png"
-plt.savefig(image_path)
-plt.close()
+waka_text = "\n".join(lines)
 
 readme_path = "README.md"
-waka_section = f"\n### ⌨️ WakaTime Language Stats\n\n![WakaTime Stats]({image_path})\n"
+waka_section = f"\n### ⌨️ WakaTime Language Stats (Last 7 Days)\n\n```\n{waka_text}\n```\n"
 
 with open(readme_path, "r", encoding="utf-8") as f:
     readme = f.read()
 
 if "### ⌨️ WakaTime Language Stats" in readme:
     readme = re.sub(
-        r"### ⌨️ WakaTime Language Stats.*?\n\n!\[.*?\]\(.*?\)\n",
+        r"### ⌨️ WakaTime Language Stats.*?\n\n```.*?```\n",
         waka_section,
         readme,
         flags=re.DOTALL
