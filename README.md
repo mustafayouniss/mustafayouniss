@@ -33,13 +33,3 @@
 
 ### 📊 This week I spent my time on
 <!-- WakaTime stats will be updated here automatically -->
-```
-Python       ████████████████████ 0h 25m
-C++          ████                 0h 5m
-```
-### ⌨️ WakaTime Language Stats (Last 7 Days)
-
-```
-Python       ████████████████████ 0h 25m
-C++          ████                 0h 5m
-```
