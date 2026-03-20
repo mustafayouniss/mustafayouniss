@@ -22,18 +22,18 @@ allowed_languages = [
     "R","Matlab","Go","C#","Ruby"
 ]
 
-# target لكل لغة
+# الهدف لكل لغة
 targets = {
-    "Python": "20h",
-    "C++": "10h",
-    "Java": "10h",
-    "SQL": "10h",
-    "JavaScript": "10h",
-    "R": "10h",
-    "Matlab": "10h",
-    "Go": "10h",
-    "C#": "10h",
-    "Ruby": "10h"
+    "Python": 20,
+    "C++": 10,
+    "Java": 10,
+    "SQL": 10,
+    "JavaScript": 10,
+    "R": 10,
+    "Matlab": 10,
+    "Go": 10,
+    "C#": 10,
+    "Ruby": 10
 }
 
 total_time = {}
@@ -49,12 +49,11 @@ for day in data['data']:
 if not total_time:
     raise ValueError("No programming language data found in WakaTime response!")
 
-# ترتيب اللغات حسب الوقت
 sorted_langs = sorted(total_time.items(), key=lambda x: x[1], reverse=True)
 
 max_seconds = sorted_langs[0][1]
 
-rows = []
+lines = []
 
 for lang, secs in sorted_langs:
 
@@ -64,32 +63,11 @@ for lang, secs in sorted_langs:
     bar_length = int((secs / max_seconds) * 20)
     bar = '█' * bar_length + ' ' * (20 - bar_length)
 
-    target_text = targets.get(lang, "10h")
+    target = targets.get(lang, 10)
 
-    rows.append(f"""
-<tr>
-<td width="35%"><strong>{lang}</strong> <span style="color:gray;">(target: {target_text})</span></td>
-<td width="45%" style="font-family:monospace;">{bar}</td>
-<td width="20%" align="right">{hours}h {minutes}m</td>
-</tr>
-""")
+    lines.append(f"{lang.ljust(12)} {bar} {hours}h {minutes}m / {target}h")
 
-waka_rows = "\n".join(rows)
-
-replacement = f"""<!-- WakaTime stats will be updated here automatically -->
-
-<table align="center" width="65%">
-
-<tr>
-<th colspan="3" align="center" style="font-size:20px; padding:8px;">
-<strong>This week I spent my time on 📊</strong>
-</th>
-</tr>
-
-{waka_rows}
-
-</table>
-"""
+waka_text = "\n".join(lines)
 
 readme_path = "README.md"
 
@@ -97,6 +75,27 @@ with open(readme_path, "r", encoding="utf-8") as f:
     readme = f.read()
 
 pattern = r"(<!-- WakaTime stats will be updated here automatically -->[\s\S]*?</table>)"
+
+replacement = f"""<!-- WakaTime stats will be updated here automatically -->
+
+<table align="center" width="60%">
+<tr>
+<th align="center" style="font-size:20px; padding:8px;">
+<strong>This week I spent my time on 📊</strong>
+</th>
+</tr>
+
+<tr>
+<td>
+
+<pre style="font-size:15px; line-height:1.6;">
+{waka_text}
+</pre>
+
+</td>
+</tr>
+</table>
+"""
 
 if re.search(pattern, readme):
     readme = re.sub(pattern, replacement, readme)
