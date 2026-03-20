@@ -76,9 +76,9 @@ replacement = f"""<!-- WakaTime stats will be updated here automatically -->
 </tr>
 
 <tr>
-<td>
+<td style="padding: 0; width: 100%;">
 
-<pre style="font-size:16px; line-height:1.6;">
+<pre style="font-size:16px; line-height:1.6; width:100%; margin:0; white-space: pre-wrap;">
 {waka_text}
 </pre>
 
@@ -95,4 +95,4 @@ else:
 with open(readme_path, "w", encoding="utf-8") as f:
     f.write(readme)
 
-print("README updated with WakaTime stats (hours + mins, realistic bars)")
+print("README updated with WakaTime stats (hours + mins, realistic bars, wider table)")
