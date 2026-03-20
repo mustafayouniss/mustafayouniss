@@ -36,4 +36,4 @@ jobs:
         with:
           commit_message: "Update WakaTime language stats [skip ci]"
           branch: main
-          file_pattern: "README.md,wakatime_languages.png"
+          file_pattern: "README.md wakatime_languages.png"
