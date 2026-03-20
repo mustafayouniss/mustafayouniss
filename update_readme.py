@@ -2,7 +2,11 @@ import os
 import requests
 import re
 import base64
+import math
 
+# -----------------------------
+# 1️⃣ إعداد WakaTime API
+# -----------------------------
 API_KEY = os.getenv("WAKATIME_API_KEY")
 if not API_KEY:
     raise ValueError("WAKATIME_API_KEY not found in environment variables!")
@@ -13,9 +17,13 @@ headers = {"Authorization": f"Basic {creds}", "Accept": "application/json"}
 
 resp = requests.get(URL, headers=headers)
 data = resp.json()
+
 if "errors" in data:
     raise ValueError(f"WakaTime API Error: {data['errors']}")
 
+# -----------------------------
+# 2️⃣ تصفية اللغات المطلوبة
+# -----------------------------
 allowed_languages = ["Python", "C++", "Java", "SQL", "JavaScript", "R", "Matlab", "Go", "C#", "Ruby"]
 
 total_time = {}
@@ -32,16 +40,29 @@ if not total_time:
 
 max_seconds = max(total_time.values())
 
+# -----------------------------
+# 3️⃣ بناء النص مع البارات المنطقية
+# -----------------------------
 lines = []
+bar_max_length = 20
+min_bar_length = 2  # طول الحد الأدنى للبار عشان يظهر
+
 for lang, secs in total_time.items():
     hours = int(secs // 3600)
     minutes = int((secs % 3600) // 60)
-    bar_length = int((secs / max_seconds) * 20)
-    bar = '█' * bar_length + ' ' * (20 - bar_length)
+
+    # استخدام اللوغاريتم لتقليل الفروقات الكبيرة
+    bar_length = int((math.log(secs + 1) / math.log(max_seconds + 1)) * bar_max_length)
+    bar_length = max(bar_length, min_bar_length)
+
+    bar = '█' * bar_length + ' ' * (bar_max_length - bar_length)
     lines.append(f"{lang.ljust(12)} {bar} {hours}h {minutes}m")
 
 waka_text = "\n".join(lines)
 
+# -----------------------------
+# 4️⃣ تحديث README
+# -----------------------------
 readme_path = "README.md"
 with open(readme_path, "r", encoding="utf-8") as f:
     readme = f.read()
