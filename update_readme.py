@@ -58,7 +58,6 @@ with open(readme_path, "r", encoding="utf-8") as f:
 
 if "### ⌨️ WakaTime Language Stats" in readme:
     readme = re.sub(
-        r"### ⌨️ WakaTime Language Stats.*?\n\n```.*?```\n",
         waka_section,
         readme,
         flags=re.DOTALL
