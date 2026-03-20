@@ -36,3 +36,6 @@
 Python       ████████████████████ 1h 32m
 C++          █                    0h 5m
 ```
+---
+
+[![Mustafa's GitHub Stats](https://github-readme-stats.vercel.app/api?username=mustafayouniss&count_private=true&show_icons=true&theme=radical)](https://github.com/mustafayouniss)
