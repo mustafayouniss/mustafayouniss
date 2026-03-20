@@ -30,10 +30,6 @@
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1280px-Scikit_learn_logo_small.svg.png" width="55"/>](#)
 
 ---
-
-### 📊 This week I spent my time on
-<!-- WakaTime stats will be updated here automatically -->
-
 ### 📊 This week I spent my time on
 <!-- WakaTime stats will be updated here automatically -->
 ```
