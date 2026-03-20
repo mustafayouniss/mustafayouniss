@@ -22,6 +22,20 @@ allowed_languages = [
     "R","Matlab","Go","C#","Ruby"
 ]
 
+# target لكل لغة
+targets = {
+    "Python": "20h",
+    "C++": "10h",
+    "Java": "10h",
+    "SQL": "10h",
+    "JavaScript": "10h",
+    "R": "10h",
+    "Matlab": "10h",
+    "Go": "10h",
+    "C#": "10h",
+    "Ruby": "10h"
+}
+
 total_time = {}
 
 for day in data['data']:
@@ -47,14 +61,16 @@ for lang, secs in sorted_langs:
     hours = int(secs // 3600)
     minutes = int((secs % 3600) // 60)
 
-    bar_length = int((secs / max_seconds) * 25)
-    bar = '▓' * bar_length + '░' * (25 - bar_length)
+    bar_length = int((secs / max_seconds) * 20)
+    bar = '█' * bar_length + ' ' * (20 - bar_length)
+
+    target_text = targets.get(lang, "10h")
 
     rows.append(f"""
 <tr>
-<td width="20%" style="font-size:17px;"><strong>{lang}</strong></td>
-<td width="60%" style="font-family:monospace; font-size:16px;">{bar}</td>
-<td width="20%" align="right" style="font-size:16px;">{hours}h {minutes}m</td>
+<td width="35%"><strong>{lang}</strong> <span style="color:gray;">(target: {target_text})</span></td>
+<td width="45%" style="font-family:monospace;">{bar}</td>
+<td width="20%" align="right">{hours}h {minutes}m</td>
 </tr>
 """)
 
@@ -62,9 +78,10 @@ waka_rows = "\n".join(rows)
 
 replacement = f"""<!-- WakaTime stats will be updated here automatically -->
 
-<table align="center" width="100%">
+<table align="center" width="65%">
+
 <tr>
-<th colspan="3" align="center" style="font-size:22px; padding:12px;">
+<th colspan="3" align="center" style="font-size:20px; padding:8px;">
 <strong>This week I spent my time on 📊</strong>
 </th>
 </tr>
