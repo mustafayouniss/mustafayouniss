@@ -22,7 +22,7 @@ allowed_languages = [
     "R","Matlab","Go","C#","Ruby"
 ]
 
-# الهدف لكل لغة
+# Weekly target لكل لغة بالساعات
 targets = {
     "Python": 20,
     "C++": 10,
@@ -36,8 +36,8 @@ targets = {
     "Ruby": 10
 }
 
+# جمع الوقت لكل لغة
 total_time = {}
-
 for day in data['data']:
     for lang in day.get('languages', []):
         name = lang['name']
@@ -49,28 +49,31 @@ for day in data['data']:
 if not total_time:
     raise ValueError("No programming language data found in WakaTime response!")
 
+# ترتيب اللغات حسب الوقت
 sorted_langs = sorted(total_time.items(), key=lambda x: x[1], reverse=True)
 
-max_seconds = sorted_langs[0][1]
-
+# إعداد الـ rows
 lines = []
+MAX_BAR_LENGTH = 20  # طول bar كحد أقصى
 
 for lang, secs in sorted_langs:
-
     hours = int(secs // 3600)
     minutes = int((secs % 3600) // 60)
 
-    bar_length = int((secs / max_seconds) * 20)
-    bar = '█' * bar_length + ' ' * (20 - bar_length)
+    # حساب نسبة الإنجاز بالنسبة للـ target
+    target_hours = targets.get(lang, 10)
+    target_secs = target_hours * 3600
+    progress_ratio = min(secs / target_secs, 1.0)  # لا تزيد عن 100%
 
-    target = targets.get(lang, 10)
+    bar_length = int(progress_ratio * MAX_BAR_LENGTH)
+    bar = '█' * bar_length + ' ' * (MAX_BAR_LENGTH - bar_length)
 
-    lines.append(f"{lang.ljust(12)} {bar} {hours}h {minutes}m / {target}h")
+    lines.append(f"{lang.ljust(12)} {bar} {hours}h {minutes}m / {target_hours}h")
 
 waka_text = "\n".join(lines)
 
+# تحديث README
 readme_path = "README.md"
-
 with open(readme_path, "r", encoding="utf-8") as f:
     readme = f.read()
 
@@ -78,7 +81,7 @@ pattern = r"(<!-- WakaTime stats will be updated here automatically -->[\s\S]*?<
 
 replacement = f"""<!-- WakaTime stats will be updated here automatically -->
 
-<table align="center" width="60%">
+<table align="center" width="65%">
 <tr>
 <th align="center" style="font-size:20px; padding:8px;">
 <strong>This week I spent my time on 📊</strong>
@@ -87,11 +90,9 @@ replacement = f"""<!-- WakaTime stats will be updated here automatically -->
 
 <tr>
 <td>
-
 <pre style="font-size:15px; line-height:1.6;">
 {waka_text}
 </pre>
-
 </td>
 </tr>
 </table>
