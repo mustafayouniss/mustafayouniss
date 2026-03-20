@@ -32,29 +32,31 @@
 ---
 <!-- WakaTime stats will be updated here automatically -->
 
-<table align="center" width="100%">
+<table align="center" width="65%">
+
 <tr>
-<th colspan="3" align="center" style="font-size:22px; padding:12px;">
+<th colspan="3" align="center" style="font-size:20px; padding:8px;">
 <strong>This week I spent my time on 📊</strong>
 </th>
 </tr>
 
 
 <tr>
-<td width="20%" style="font-size:17px;"><strong>Python</strong></td>
-<td width="60%" style="font-family:monospace; font-size:16px;">▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓</td>
-<td width="20%" align="right" style="font-size:16px;">1h 32m</td>
+<td width="35%"><strong>Python</strong> <span style="color:gray;">(target: 20h)</span></td>
+<td width="45%" style="font-family:monospace;">████████████████████</td>
+<td width="20%" align="right">1h 32m</td>
 </tr>
 
 
 <tr>
-<td width="20%" style="font-size:17px;"><strong>C++</strong></td>
-<td width="60%" style="font-family:monospace; font-size:16px;">▓░░░░░░░░░░░░░░░░░░░░░░░░</td>
-<td width="20%" align="right" style="font-size:16px;">0h 5m</td>
+<td width="35%"><strong>C++</strong> <span style="color:gray;">(target: 10h)</span></td>
+<td width="45%" style="font-family:monospace;">█                   </td>
+<td width="20%" align="right">0h 5m</td>
 </tr>
 
 
 </table>
+
 
 
 
