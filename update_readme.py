@@ -21,19 +21,7 @@ allowed_languages = [
     "R","Matlab","Go","C#","Ruby"
 ]
 
-# Weekly target لكل لغة بالساعات
-targets = {
-    "Python": 20,
-    "C++": 10,
-    "Java": 10,
-    "SQL": 10,
-    "JavaScript": 10,
-    "R": 10,
-    "Matlab": 10,
-    "Go": 10,
-    "C#": 10,
-    "Ruby": 10
-}
+TARGET_HOURS = 20  # توحيد الـ target لكل لغة
 
 # جمع الوقت لكل لغة
 total_time = {}
@@ -48,6 +36,7 @@ for day in data['data']:
 if not total_time:
     raise ValueError("No programming language data found in WakaTime response!")
 
+# ترتيب اللغات حسب الوقت
 sorted_langs = sorted(total_time.items(), key=lambda x: x[1], reverse=True)
 
 MAX_BAR_LENGTH = 20
@@ -57,29 +46,21 @@ for lang, secs in sorted_langs:
     hours = int(secs // 3600)
     minutes = int((secs % 3600) // 60)
 
-    target_hours = targets.get(lang, 10)
-    target_secs = target_hours * 3600
+    # نسبة الإنجاز بالنسبة للـ target
+    target_secs = TARGET_HOURS * 3600
     progress_ratio = min(secs / target_secs, 1.0)
 
-    bar_filled = int(progress_ratio * MAX_BAR_LENGTH)
-    bar_empty = MAX_BAR_LENGTH - bar_filled
+    filled_length = int(progress_ratio * MAX_BAR_LENGTH)
+    empty_length = MAX_BAR_LENGTH - filled_length
 
-    # شكل البار مع حدود []
-    bar = "[" + "█" * bar_filled + " " * bar_empty + "]"
+    # البار داخل مستطيل
+    bar = "┌" + "─"*MAX_BAR_LENGTH + "┐\n"
+    bar += "│" + "█"*filled_length + "░"*empty_length + "│\n"
+    bar += "└" + "─"*MAX_BAR_LENGTH + "┘"
 
-    # ألوان تقريبية باستخدام emojis (اختياري) لو حابب
-    # لو مش حابب الألوان ابقي خلي bar طبيعي بدون emojis
-    # مثلا:
-    # if progress_ratio >= 0.8:
-    #     bar = "[" + "🟩"*bar_filled + " "*(bar_empty) + "]"
-    # elif progress_ratio >= 0.5:
-    #     bar = "[" + "🟨"*bar_filled + " "*(bar_empty) + "]"
-    # else:
-    #     bar = "[" + "🟥"*bar_filled + " "*(bar_empty) + "]"
+    lines.append(f"{lang.ljust(12)}\n{bar} {hours}h {minutes}m / {TARGET_HOURS}h")
 
-    lines.append(f"{lang.ljust(12)} {bar} {hours}h {minutes}m / {target_hours}h")
-
-waka_text = "\n".join(lines)
+waka_text = "\n\n".join(lines)  # مسافة بين اللغات
 
 # تحديث README
 readme_path = "README.md"
@@ -99,7 +80,7 @@ replacement = f"""<!-- WakaTime stats will be updated here automatically -->
 
 <tr>
 <td>
-<pre style="font-size:15px; line-height:1.6; font-family: 'Courier New', monospace;">
+<pre style="font-size:14px; line-height:1.6; font-family: 'Courier New', monospace;">
 {waka_text}
 </pre>
 </td>
@@ -115,4 +96,4 @@ else:
 with open(readme_path, "w", encoding="utf-8") as f:
     f.write(readme)
 
-print("✅ README updated with WakaTime stats (Advanced bars with targets)")
+print("✅ README updated with WakaTime stats (Bars inside rectangles)")
