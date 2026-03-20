@@ -38,3 +38,11 @@ Python       ████████████████████ 0h 25m
 Text         ████                 0h 5m
 C++          ████                 0h 5m
 ```
+
+### ⌨️ WakaTime Language Stats (Last 7 Days)
+
+```
+Python       ████████████████████ 0h 25m
+Text         ████                 0h 5m
+C++          ████                 0h 5m
+```
