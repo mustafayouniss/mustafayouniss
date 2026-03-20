@@ -36,3 +36,8 @@
 Python       ████████████████████ 1h 29m
 C++          █                    0h 5m
 ```
+
+### 📊 This week I spent my time on
+<!-- WakaTime stats will be updated here automatically -->
+<span style="color:#5DADE2">Python       ████████████████████ 1h 29m</span><br><span style="color:#2E86C1">C++          █                    0h 5m</span>
+<!-- End WakaTime stats -->
