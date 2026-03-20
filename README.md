@@ -33,6 +33,9 @@
 <!-- WakaTime stats will be updated here automatically -->
 <table>
 <tr>
+<th>This week I spent my time on 📊</th>
+</tr>
+<tr>
 <td>
 <pre>
 Python       ████████████████████ 1h 32m
