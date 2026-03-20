@@ -31,6 +31,7 @@
 
 ---
 
+
 <!-- WakaTime stats will be updated here automatically -->
 <table align="center" width="100%" style="border-collapse: collapse; font-size:16px;">
 <tr>
@@ -51,4 +52,5 @@
     </tr>
     
 </table>
+
 
