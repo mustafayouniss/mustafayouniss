@@ -13,12 +13,17 @@ headers = {"Authorization": f"Basic {creds}", "Accept": "application/json"}
 
 resp = requests.get(URL, headers=headers)
 data = resp.json()
+
 if "errors" in data:
     raise ValueError(f"WakaTime API Error: {data['errors']}")
 
-allowed_languages = ["Python", "C++", "Java", "SQL", "JavaScript", "R", "Matlab", "Go", "C#", "Ruby"]
+allowed_languages = [
+    "Python","C++","Java","SQL","JavaScript",
+    "R","Matlab","Go","C#","Ruby"
+]
 
 total_time = {}
+
 for day in data['data']:
     for lang in day.get('languages', []):
         name = lang['name']
@@ -30,50 +35,58 @@ for day in data['data']:
 if not total_time:
     raise ValueError("No programming language data found in WakaTime response!")
 
-max_seconds = max(total_time.values())
+# ترتيب اللغات حسب الوقت
+sorted_langs = sorted(total_time.items(), key=lambda x: x[1], reverse=True)
 
-lines = []
-for lang, secs in total_time.items():
+max_seconds = sorted_langs[0][1]
+
+rows = []
+
+for lang, secs in sorted_langs:
+
     hours = int(secs // 3600)
     minutes = int((secs % 3600) // 60)
-    bar_length = int((secs / max_seconds) * 20)
-    bar = '█' * bar_length + ' ' * (20 - bar_length)
-    lines.append(f"{lang.ljust(12)} {bar} {hours}h {minutes}m")
 
-waka_text = "\n".join(lines)
+    bar_length = int((secs / max_seconds) * 25)
+    bar = '▓' * bar_length + '░' * (25 - bar_length)
 
-readme_path = "README.md"
-with open(readme_path, "r", encoding="utf-8") as f:
-    readme = f.read()
+    rows.append(f"""
+<tr>
+<td width="20%" style="font-size:17px;"><strong>{lang}</strong></td>
+<td width="60%" style="font-family:monospace; font-size:16px;">{bar}</td>
+<td width="20%" align="right" style="font-size:16px;">{hours}h {minutes}m</td>
+</tr>
+""")
 
-pattern = r"(<!-- WakaTime stats will be updated here automatically -->[\s\S]*?</table>)"
+waka_rows = "\n".join(rows)
+
 replacement = f"""<!-- WakaTime stats will be updated here automatically -->
 
 <table align="center" width="100%">
 <tr>
-<th align="center" style="font-size:22px; padding:10px;">
+<th colspan="3" align="center" style="font-size:22px; padding:12px;">
 <strong>This week I spent my time on 📊</strong>
 </th>
 </tr>
 
-<tr>
-<td>
+{waka_rows}
 
-<pre style="font-size:16px; line-height:1.6;">
-{waka_text}
-</pre>
-
-</td>
-</tr>
 </table>
 """
+
+readme_path = "README.md"
+
+with open(readme_path, "r", encoding="utf-8") as f:
+    readme = f.read()
+
+pattern = r"(<!-- WakaTime stats will be updated here automatically -->[\s\S]*?</table>)"
 
 if re.search(pattern, readme):
     readme = re.sub(pattern, replacement, readme)
 else:
-    readme += "\n### 📊 This week I spent my time on\n" + replacement
+    readme += "\n" + replacement
 
 with open(readme_path, "w", encoding="utf-8") as f:
     f.write(readme)
 
-print("README updated with WakaTime stats (hours + mins)")
+print("✅ README updated with WakaTime stats")
