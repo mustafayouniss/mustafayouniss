@@ -44,7 +44,9 @@ C++          █                    0h 5m
 </td>
 </tr>
 </table>
+
 ---
+
 <table align="center">
   <tr>
     <td>
