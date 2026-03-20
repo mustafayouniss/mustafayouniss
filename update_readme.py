@@ -50,6 +50,9 @@ pattern = r"(<!-- WakaTime stats will be updated here automatically -->[\s\S]*?<
 replacement = f"""<!-- WakaTime stats will be updated here automatically -->
 <table>
 <tr>
+<th>This week I spent my time on 📊</th>
+</tr>
+<tr>
 <td>
 <pre>
 {waka_text}
