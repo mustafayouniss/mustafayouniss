@@ -32,11 +32,6 @@
 ---
 
 ### 📊 This week I spent my time on
-![WakaTime Stats](wakatime_languages.png)
+<!-- WakaTime stats will be updated here automatically -->
 
 ---
-
-
-### ⌨️ WakaTime Language Stats
-
-![WakaTime Stats](wakatime_languages.png)
