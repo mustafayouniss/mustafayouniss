@@ -30,26 +30,28 @@
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1280px-Scikit_learn_logo_small.svg.png" width="55"/>](#)
 
 ---
+
 <!-- WakaTime stats will be updated here automatically -->
-
-<table align="center" width="100%">
+<table align="center" width="100%" style="border-collapse: collapse; font-size:16px;">
 <tr>
-<th align="center" style="font-size:22px; padding:10px;">
-<strong>This week I spent my time on 📊</strong>
-</th>
+    <th style="text-align:left; padding:10px; font-size:22px;" colspan="3">📊 This week I spent my time on</th>
 </tr>
 
-<tr>
-<td>
+    <tr>
+        <td style="padding:5px; font-weight:bold;">Python</td>
+        <td style="padding:5px; font-family:monospace;">███                                     </td>
+        <td style="padding:5px; text-align:right;">1h 32m</td>
+    </tr>
+    
 
-<pre style="font-size:16px; line-height:1.6;">
-Python       ███                  1h 32m
-C++          █                    0h 5m
-</pre>
-
-</td>
-</tr>
+    <tr>
+        <td style="padding:5px; font-weight:bold;">C++</td>
+        <td style="padding:5px; font-family:monospace;">█                                       </td>
+        <td style="padding:5px; text-align:right;">0h 5m</td>
+    </tr>
+    
 </table>
+
 
 
 
