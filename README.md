@@ -31,6 +31,7 @@
 
 ---
 
+
 <!-- WakaTime stats will be updated here automatically -->
 <table align="center" width="100%" style="border-collapse: collapse; font-size:16px;">
 <tr>
@@ -38,19 +39,20 @@
 </tr>
 
     <tr>
-        <td style="padding:5px; font-weight:bold;">Python</td>
-        <td style="padding:5px; font-family:monospace;">███                                     </td>
-        <td style="padding:5px; text-align:right;">1h 32m</td>
+        <td style="padding:5px; font-weight:bold; text-align:left;">Python</td>
+        <td style="padding:5px; font-family:monospace; text-align:center;">███                                     </td>
+        <td style="padding:5px; text-align:center;">1h 32m</td>
     </tr>
     
 
     <tr>
-        <td style="padding:5px; font-weight:bold;">C++</td>
-        <td style="padding:5px; font-family:monospace;">█                                       </td>
-        <td style="padding:5px; text-align:right;">0h 5m</td>
+        <td style="padding:5px; font-weight:bold; text-align:left;">C++</td>
+        <td style="padding:5px; font-family:monospace; text-align:center;">█                                       </td>
+        <td style="padding:5px; text-align:center;">0h 5m</td>
     </tr>
     
 </table>
+
 
 
 
