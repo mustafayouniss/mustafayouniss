@@ -1,7 +1,7 @@
 import os
 import requests
-import base64
 import re
+import base64
 
 # -----------------------------
 # 1️⃣ إعداد WakaTime API
@@ -38,60 +38,61 @@ if not total_time:
     raise ValueError("No programming language data found in WakaTime response!")
 
 # -----------------------------
-# 3️⃣ بناء الجدول (صف لكل لغة)
+# 3️⃣ بناء النص مع البارات الواقعية
 # -----------------------------
-bar_max_length = 40  # أقصى طول للبار
+lines = []
+bar_max_length = 20
 bar_unit = 0.5 * 3600  # كل نصف ساعة = وحدة بار
 
-rows = []
 for lang, secs in total_time.items():
     hours = int(secs // 3600)
     minutes = int((secs % 3600) // 60)
 
+    # حساب طول البار حسب الوقت الفعلي
     bar_length = int(secs / bar_unit)
     bar_length = min(bar_length, bar_max_length)
-    bar_length = max(bar_length, 1)  # ضمان طول أدنى للبار
+    bar_length = max(bar_length, 1)  # طول أدنى للبار
 
     bar = '█' * bar_length + ' ' * (bar_max_length - bar_length)
+    lines.append(f"{lang.ljust(12)} {bar} {hours}h {minutes}m")
 
-    rows.append(f"""
-    <tr>
-        <td style="padding:5px; font-weight:bold; text-align:left;">{lang}</td>
-        <td style="padding:5px; font-family:monospace; text-align:center;">{bar}</td>
-        <td style="padding:5px; text-align:center;">{hours}h {minutes}m</td>
-    </tr>
-    """)
-
-rows_html = "\n".join(rows)
+waka_text = "\n".join(lines)
 
 # -----------------------------
-# 4️⃣ إنشاء الجدول الكامل
-# -----------------------------
-table_html = f"""
-<!-- WakaTime stats will be updated here automatically -->
-<table align="center" width="100%" style="border-collapse: collapse; font-size:16px;">
-<tr>
-    <th style="text-align:left; padding:10px; font-size:22px;" colspan="3">📊 This week I spent my time on</th>
-</tr>
-{rows_html}
-</table>
-"""
-
-# -----------------------------
-# 5️⃣ تحديث README
+# 4️⃣ تحديث README
 # -----------------------------
 readme_path = "README.md"
 with open(readme_path, "r", encoding="utf-8") as f:
     readme = f.read()
 
 pattern = r"(<!-- WakaTime stats will be updated here automatically -->[\s\S]*?</table>)"
+replacement = f"""<!-- WakaTime stats will be updated here automatically -->
+
+<table align="center" width="100%">
+<tr>
+<th align="center" style="font-size:22px; padding:10px;">
+<strong>This week I spent my time on 📊</strong>
+</th>
+</tr>
+
+<tr>
+<td>
+
+<pre style="font-size:16px; line-height:1.6;">
+{waka_text}
+</pre>
+
+</td>
+</tr>
+</table>
+"""
 
 if re.search(pattern, readme):
-    readme = re.sub(pattern, table_html, readme)
+    readme = re.sub(pattern, replacement, readme)
 else:
-    readme += "\n" + table_html
+    readme += "\n### 📊 This week I spent my time on\n" + replacement
 
 with open(readme_path, "w", encoding="utf-8") as f:
     f.write(readme)
 
-print("README updated with WakaTime stats ✅ (multi-row table)")
+print("README updated with WakaTime stats (hours + mins, realistic bars)")
