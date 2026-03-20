@@ -48,7 +48,7 @@ with open(readme_path, "r", encoding="utf-8") as f:
 
 pattern = r"(<!-- WakaTime stats will be updated here automatically -->[\s\S]*?</table>)"
 replacement = f"""<!-- WakaTime stats will be updated here automatically -->
-<table align="center" width="720">
+<table align="center" width="800">
 <tr>
 <th style="font-size:18px;"><strong>This week I spent my time on 📊</strong></th>
 </tr>
