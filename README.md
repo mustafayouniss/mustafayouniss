@@ -110,4 +110,9 @@ C++          █                    0h 5m
 
 ---
 
-### Check out my portfolio here: [mustafa-younis-portfolio 🡥](https://raw.githubusercontent.com/mustafayouniss/mustafayouniss/main/mustafa-younis-portfolio.pdf)
+<h3>
+Check out my portfolio here: 
+<a href="https://raw.githubusercontent.com/mustafayouniss/mustafayouniss/main/mustafa-younis-portfolio.pdf" style="text-decoration: underline;">
+mustafa-younis-portfolio 🡥
+</a>
+</h3>
