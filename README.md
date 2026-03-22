@@ -133,18 +133,6 @@ C++          █                    0h 5m
 <h3>
 Check out my portfolio here : 
 <a href="https://raw.githubusercontent.com/mustafayouniss/mustafayouniss/main/mustafa-younis-portfolio.pdf">
-   <u>mustafa-younis-portfolio</u>
-   <svg xmlns="http://www.w3.org/2000/svg" 
-        width="14" height="14" 
-        viewBox="0 0 24 24" 
-        fill="none" 
-        stroke="currentColor" 
-        stroke-width="2" 
-        stroke-linecap="round" 
-        stroke-linejoin="round"
-        style="vertical-align: middle; margin-left: 4px;">
-      <path d="M7 17L17 7"></path>
-      <path d="M7 7h10v10"></path>
-   </svg>
+   <u>mustafa-younis-portfolio</u> ↗
 </a>
 </h3>
