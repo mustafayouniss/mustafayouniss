@@ -131,6 +131,6 @@ C++          █                    0h 5m
 <h3>
 Check out my portfolio here : 
 <a href="https://raw.githubusercontent.com/mustafayouniss/mustafayouniss/main/mustafa-younis-portfolio.pdf">
-   <u>mustafa-younis-portfolio</u> ↗
+   <u>mustafa-younis-portfolio🔗</u> 
 </a>
 </h3>
