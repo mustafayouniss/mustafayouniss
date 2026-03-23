@@ -20,7 +20,7 @@
 [![Python](https://img.icons8.com/?size=35&id=13441&format=png&color=000000)]()   &nbsp;
 [![C++](https://img.icons8.com/?size=35&id=40669&format=png&color=000000)]()   &nbsp;
 [![Java](https://img.icons8.com/?size=35&id=13679&format=png&color=000000)]()   &nbsp;
-[![R](https://img.icons8.com/?size=40&id=CLvQeiwFpit4&format=png&color=000000)]()   &nbsp;
+[![R](https://img.icons8.com/?size=35&id=CLvQeiwFpit4&format=png&color=000000)]()   &nbsp;
 [![SQL](https://img.icons8.com/?size=35&id=J6KcaRLsTgpZ&format=png&color=000000)]()   &nbsp;
 [![Pandas](https://img.icons8.com/?size=35&id=xSkewUSqtErH&format=png&color=000000)]()   &nbsp;
 [![NumPy](https://img.icons8.com/?size=35&id=aR9CXyMagKIS&format=png&color=000000)]()   &nbsp;
