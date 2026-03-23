@@ -26,6 +26,7 @@
 [![NumPy](https://img.icons8.com/?size=35&id=aR9CXyMagKIS&format=png&color=000000)]()   &nbsp;
 [![Matplotlib](https://img.icons8.com/?size=35&id=TkX1totjFmAD&format=png&color=000000)]()   &nbsp;
 <img src="https://scipy.org/images/logo.svg" width="35" alt="SciPy Logo" />  &nbsp;
+[![Tensorflow](https://img.icons8.com/?size=35&id=n3QRpDA7KZ7P&format=png&color=000000)]()   &nbsp;
 [![MySQL](https://img.icons8.com/?size=45&id=QeIg9siFKGgp&format=png&color=000000)]()   &nbsp;
 [![MSSQLserver](https://img.icons8.com/?size=35&id=laYYF3dV0Iew&format=png&color=000000)]()   &nbsp;
 [![Postgresql](https://img.icons8.com/?size=35&id=JRnxU7ZWP4mi&format=png&color=000000)]()   &nbsp;
