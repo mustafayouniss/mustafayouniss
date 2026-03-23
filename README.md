@@ -25,7 +25,7 @@
 [![Pandas](https://img.icons8.com/?size=35&id=xSkewUSqtErH&format=png&color=000000)]()   &nbsp;
 [![NumPy](https://img.icons8.com/?size=35&id=aR9CXyMagKIS&format=png&color=000000)]()   &nbsp;
 [![Matplotlib](https://img.icons8.com/?size=35&id=TkX1totjFmAD&format=png&color=000000)]()   &nbsp;
-[![MySQL](https://img.icons8.com/?size=43&id=QeIg9siFKGgp&format=png&color=000000)]()   &nbsp;
+[![MySQL](https://img.icons8.com/?size=45&id=QeIg9siFKGgp&format=png&color=000000)]()   &nbsp;
 [![MSSQLserver](https://img.icons8.com/?size=35&id=laYYF3dV0Iew&format=png&color=000000)]()   &nbsp;
 [<img src="https://www.educative.io/api/edpresso/shot/5096396179374080/image/5300591913336832" width="35"/>](#) &nbsp;
 [![Power BI](https://img.icons8.com/?size=35&id=3sGOUDo9nJ4k&format=png&color=000000)]()   &nbsp;
