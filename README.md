@@ -191,17 +191,13 @@ C++          █                    0h 0m
 
 ---
 
-<!-- GitHub Stats -->
-<table align="center">
-  <tr>
-    <td>
-      <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=mustafayouniss&show_icons=true&theme=github_dark&hide_border=true&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&show_private=true" width="550"/>
-    </td>
-    <td>
-      <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=mustafayouniss&layout=compact&theme=github_dark&hide_border=true&title_color=58a6ff&text_color=c9d1d9" width="400"/>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=mustafayouniss&theme=github-dark&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=mustafayouniss&theme=github_dark" />
+</p>
 
 ---
 
