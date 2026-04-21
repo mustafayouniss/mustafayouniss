@@ -51,13 +51,13 @@
 <td style="padding: 0; width: 100%;">
 
 <pre style="font-size:16px; line-height:1.6; width:100%; margin:0; white-space: pre-wrap;">
-C++          ████████████████████ 12h 54m
-Python       █                    0h 35m
+C++          ████████████████████ 11h 22m
 </pre>
 
 </td>
 </tr>
 </table>
+
 
 
 
