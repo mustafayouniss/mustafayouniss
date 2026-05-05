@@ -51,14 +51,14 @@
 <td style="padding: 0; width: 100%;">
 
 <pre style="font-size:16px; line-height:1.6; width:100%; margin:0; white-space: pre-wrap;">
-Java         █                    0h 22m
-Python       █                    0h 1m
 C++          █                    0h 39m
+Java         █                    0h 19m
 </pre>
 
 </td>
 </tr>
 </table>
+
 
 
 
