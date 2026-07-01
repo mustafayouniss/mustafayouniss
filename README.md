@@ -52,12 +52,13 @@
 
 <pre style="font-size:16px; line-height:1.6; width:100%; margin:0; white-space: pre-wrap;">
 C++          ███████████          5h 48m
-Python       ███                  1h 42m
+Python       ████                 2h 0m
 </pre>
 
 </td>
 </tr>
 </table>
+
 
 
 
